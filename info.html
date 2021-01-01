@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>21 點 - 遊戲說明</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="bootstrap-4.2.1/dist/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="tailwind.css">-->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/bootstrapmodify.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-xl navbar-light mb-5 sticky-top">
+          <a class="navbar-brand text-3xl" href="index.html">21POINT</a>
+          <button class="navbar-toggler btn-sm" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon btn-sm"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">  <!--m?-auto 推移-->
+                  <li class="nav-item mx-2">
+                  <a class="nav-link" href="index.html">主頁</a>
+                  </li>
+                  <li class="nav-item active mx-2">
+                      <a class="nav-link" href="info.html">遊戲說明</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                      <a class="nav-link disabled" href="#" >其他遊戲</a>
+                  </li>
+              </ul>
+          </div>
+        </nav>
+      </div>
+
+
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-4">
+                <div class="card border-none">
+                    <i class="animate-pulse text-center fa fa-4x fa-gamepad fill-current text-green-400" aria-hidden="true"></i>
+                    <div class="card-body text-center">
+                      <h5 class="card-title text-3xl font-extrabold">21點</h5>
+                      <p class="card-text text-xl">敲好玩ㄉ遊戲</p>
+                      <p class="card-text text-muted p-3 text-xs">Last updated: 2021.01.02</p>
+                      <a href="#infos" class="card-text text-green-900 hover:no-underline active:no-underline hover:shadow-none hover:text-green-700" data-toggle="collapse"  role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-arrow-right font-normal"></i> View Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="collapse" id="infos">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="card card-body" style="display: inline-block;">
+                        <i class="fa fa-eercast"></i> 按下 <button class="btn btn-sm btn-danger">開始/重新遊戲</button> 即可以開始遊戲，電腦隨機各發一張牌，並多給玩家一張。
+                        <br><br>
+                        <i class="fa fa-eercast"></i> 按下 <button class="btn btn-sm btn-primary">我想再加一張!</button> 可以加一張牌，但不能超過21點。
+                        <br><br>
+                        <i class="fa fa-eercast"></i> 按下 <button class="btn btn-sm btn-primary">我不加了~</button> 即讓莊家持續得牌至分出勝負為止。
+                        <br><br>
+                        <div class="alert alert-warning">當任何一方超過21點，即對方獲勝！</div>
+                        <div class="row d-flex justify-content-center mt-3 mb-2">
+                            <div class="col-12 d-flex justify-content-center">
+                                <a class="btn btn-lg w-100 btn-warning" href="index.html" role="button">趕快開始玩!!!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.2.1/dist/js/bootstrap.min.js"></script>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

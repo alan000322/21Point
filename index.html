@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>21 點</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="bootstrap-4.2.1/dist/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="tailwind.css">-->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/bootstrapmodify.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-xl navbar-light mb-5 sticky-top">
+      <a class="navbar-brand text-3xl" href="index.html">21POINT</a>
+      <button class="navbar-toggler btn-sm" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon btn-sm"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">  <!--m?-auto 推移-->
+              <li class="nav-item active mx-2">
+              <a class="nav-link" href="index.html">主頁<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item mx-2">
+                  <a class="nav-link" href="info.html">遊戲說明</a>
+              </li>
+              <li class="nav-item mx-2">
+                  <a class="nav-link disabled" href="#" >其他遊戲</a>
+              </li>
+          </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-10">
+        <section class="game-table">
+
+          <section class="dealer-cards zone">
+            <h1 class="transitions">莊家</h1>
+            <div class="deck">
+              <div class="cards"><span></span><div class="dealerCard" id="dealerCard1"></div></div>
+              <div class="cards"><span></span><div class="dealerCard" id="dealerCard2"></div></div>
+              <div class="cards"><span></span><div class="dealerCard" id="dealerCard3"></div></div>
+              <div class="cards"><span></span><div class="dealerCard" id="dealerCard4"></div></div>
+              <div class="cards"><span></span><div class="dealerCard" id="dealerCard5"></div></div>
+            </div>
+          </section>
+    
+          <section class="your-cards zone">
+            <h1 class="transitions">你</h1>
+            <div class="deck">
+              <div class="cards"><span></span><div class="yourCard" id="yourCard1"></div></div>
+              <div class="cards"><span></span><div class="yourCard" id="yourCard2"></div></div>
+              <div class="cards"><span></span><div class="yourCard" id="yourCard3"></div></div>
+              <div class="cards"><span></span><div class="yourCard" id="yourCard4"></div></div>
+              <div class="cards"><span></span><div class="yourCard" id="yourCard5"></div></div>
+            </div>
+          </section>
+    
+          <footer class="action">
+            <input type="button" id="action-hit" class="action-button btn btn-primary mx-4 px-2" value="我想再加一張!" disabled>
+            <input type="button" id="action-stand" class="action-button btn btn-primary mx-4 px-2" value="我不加了~" disabled>
+            <input type="button" id="action-new-game" class="btn btn-danger mx-4 px-2" value="開始/重新遊戲">
+          </footer>
+        </section>
+      </div>
+    </div>
+    
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="bootstrap-4.2.1/dist/js/bootstrap.min.js"></script>
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
